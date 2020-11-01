@@ -45,6 +45,10 @@ target_link_libraries(ensock common-preeny dl)
 add_library(writeout SHARED src/writeout.c)
 target_link_libraries(writeout common-preeny dl)
 
+# De-getc
+add_library(degetc SHARED src/degetc.c)
+target_link_libraries(degetc common-preeny)
+
 # Random
 add_library(desrand SHARED src/desrand.c)
 target_link_libraries(desrand common-preeny dl)
